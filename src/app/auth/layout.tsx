@@ -5,7 +5,7 @@ import Shape from "@/../public/shape.svg";
 
 export default function AuthLayout ({children}: {children : React.ReactNode}) {
     return (
-        <main className={styles.main}>
+        <main className={styles.wrapper}>
             <div className={styles.containerForm}>
                 <h1 className={styles.title}>Les ateliers du Baobab</h1>
                 {children}
