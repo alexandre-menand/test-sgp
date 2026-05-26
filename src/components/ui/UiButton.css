@@ -1,0 +1,18 @@
+.button {
+    --variant-containedBg: var(--color-gray-200);
+    --variant-textColor: var(--color-primary);
+
+    text-transform: none;
+    box-shadow: none;
+    border-radius: 0.5rem;
+    gap: 0.4rem;
+}
+
+.button:hover {
+    --variant-containedBg: var(--color-gray-200);
+    --variant-containedBorder: var(--color-primary);
+}
+
+.button.MuiButton-text{
+    text-decoration: underline;
+}
