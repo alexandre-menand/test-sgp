@@ -1,0 +1,16 @@
+.UiTextField {
+    display: grid;
+    gap: 0.4rem;
+}
+
+.UiTextField-TextField{
+    width: 100%;
+}
+
+.UiTextField-TextField input {
+    padding: 0.8rem 1.5rem;
+}
+
+.UiTextField-TextField fieldset {
+    border-radius: 0.5rem;
+}
