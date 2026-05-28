@@ -7,6 +7,7 @@ import WindowIcon from "@/../public/window-icon.svg"
 import authLogin from "@/actions/auth-login";
 import {useActionState, useEffect} from "react";
 import Stack from '@mui/material/Stack';
+import UiFormFeedback from "@/components/ui/UiFormFeedback";
 
 export default function FormAuthLogin () {
     const [stateLogin, formActionLogin] = useActionState(authLogin, {})
@@ -41,10 +42,15 @@ export default function FormAuthLogin () {
                     helperText={stateLogin.errors?.password}
                 />
                     <Stack direction="column" gap={2}>
+                        <UiFormFeedback
+                            success={stateLogin.success}
+                            text={stateLogin.success ? 'Envoyé' : 'Erreur'}
+                        />
                         <UiButton type="submit" variant="contained" icon={<Image src={WindowIcon} alt="" />}>Se connecter</UiButton>
                         <UiButton>Mot de passe oublié ?</UiButton>
                     </Stack>
                 </Stack>
+
             </form>
     )
 }
