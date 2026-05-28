@@ -18,7 +18,6 @@ export default function FormAuthLogin () {
     }, [stateLogin]);
 
     return (
-
             <form action={formActionLogin}  >
                 <Stack direction="column" gap={3} width={250}>
                 <UiTextField
