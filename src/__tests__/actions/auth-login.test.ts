@@ -1,4 +1,4 @@
-import {describe, it, expect, vi} from "vitest";
+import {describe, it, expect} from "vitest";
 import authLogin from "@/actions/auth-login"
 
 const mockFormDataAuthLogin = (): FormData => {
@@ -10,7 +10,7 @@ const mockFormDataAuthLogin = (): FormData => {
 
 
 
-describe('ACTIONS : auth-login.ts', async () => {
+describe('actions/auth-login.ts', async () => {
 
     it('Un formulaire correctement remplit ', async () => {
 
