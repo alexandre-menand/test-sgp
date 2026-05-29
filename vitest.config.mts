@@ -6,5 +6,10 @@ export default defineConfig({
     plugins: [tsconfigPaths(), react()],
     test: {
         environment: 'jsdom',
+        exclude: [
+            '**/node_modules/**',
+            '**/dist/**',
+            './src/__tests__/e2e',
+        ],
     },
 })
